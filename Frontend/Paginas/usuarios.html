@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Sport Zone | Usuarios</title>
+	<link rel="stylesheet" href="../estilos/bootstrap/bootstrap.min.css">
+	<link rel="stylesheet" href="../estilos/bootstrap/bootstrap-theme.min.css">
+	<link rel="stylesheet" href="../estilos/sportzone_style.css">
+	<link rel="stylesheet" href="../estilos/iconos.css">
+	<link rel="shortcut icon" href="../imagenes/favicon.ico">
+
+
+</head>
+	<nav class="navbar-fixed-top">
+		<ul class="navegacion">
+			<li class="logo logoA"><a href="#"><img src="../imagenes/logo-b.png" alt="logo"></a></li>
+			
+			<li class="nombre nombreA" onClick="javascript: muestraCerrarSesion()"><span>Nombre</span><br><small>correo</small><br /><a href="#" class="icon-arrow-drop-down"></a>
+				<div id="cerrarSesion">
+					<button class="boton verde" onClick="javascript: cerrarSesion()">Cerrar Sesión  <span class="icon-remove-user"></span></button>
+				</div>
+			</li>
+		</ul>
+		<div id="inicioBarraUno" class="inicioBarra" onClick="javascript: muestraBarra()">
+			<span href="#" class="icon-triangle-right"></span>
+		</div>
+		<div id="barraLateral">
+			<ul>
+				<li><a href="menuAdmi.html"><span class="icon-home">_</span>Menú</a></li>
+				<li><a href="productos.html">Productos</a></li>
+				<li><a href="usuarios.html">Usuarios</a></li>
+				<li><a href="marca.html">Marcas</a></li>
+				<li><a href="deportes.html">Deportes</a></li>
+				<li><a href="categorias.html">Categorías</a></li>
+				<li><a href="subcategorias.html">Subcategorías</a></li>
+				
+			</ul>
+			<div id="inicioBarraDos" class="inicioBarra" onClick="javascript: muestraBarra()">
+				<span href="#" class="icon-triangle-left"></span>
+			</div>
+		</div>
+	</nav>
+	<div class="titulo">
+		<h1>Catalogo de Usuarios</h1>
+	</div>
+	<div id="contenido">
+		<div id="lista">
+			<table>
+				<thead>
+					<tr>
+						<th>Id</th>
+						<th>Nombre</th>
+						<th>Correo</th>
+						<th>Rol</th>
+						<th></th>
+					</tr>
+				</thead>
+				<tbody>
+					
+
+				</tbody>
+			</table>
+			<button class="boton btnGuardar" onClick="javaScript: mostrarFormAgregaUsuario();">Agrega <span class="icon-plus2"></span></button>
+		</div>
+
+		<div id="formulario">
+			<p id="error"></p>
+
+			<div class="grupo-input">
+				<label for="id">ID</label>
+				<input type="text" id="id" disabled>
+			</div>
+			<div class="grupo-input">
+				<label for="nombre">Usuario</label>
+				<input type="text" id="nombre" placeholder="Nombre de usuario" maxlength="15">
+			</div>
+			<div class="grupo-input">
+				<label for="correo">Correo</label>
+				<input type="text" id="correo" placeholder="Correo Electrónico" maxlength="25">
+			</div>
+			<div class="grupo-input">
+				<label for="contraseña">Contraseña</label>
+				<input type="text" id="contraseña" placeholder="Contraseña para iniciar sesión" maxlength="15">
+			</div>
+			<div class="grupo-input">
+				<label for="rol">Rol</label>
+				<input type="text" id="rol" placeholder="Rol de Usuario" disabled text="Administrador">
+			</div>
+
+			<button class="boton btnCancelar" onClick="javascript: mostrarFormAgregaUsuario();"><span class="icon-triangle-left"></span>&nbsp;&nbsp;Cancelar</button>
+			&nbsp;&nbsp;
+			<button class="boton btnGuardar" onClick="javaScript: validaDatos();">Guardar&nbsp;&nbsp;<span class="icon-floppy-disk"></span></button>
+
+		</div>
+	</div>
+	
+		<footer id="pieAdmi">
+			Copyright <strong>SportZone</strong>
+		</footer>
+
+	
+	
+	<div id="modalAvisos" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+             <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+						<h1>SportZone</h1>
+					</div>
+					<div id="aviso" class="modal-body">
+						<p>Mensaje del Aviso...</p>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="boton btnCancelar" data-dismiss="modal">Cerrar</button>
+					</div>
+					
+                </div>
+            </div>
+        </div>
+	
+	
+
+	<script src="../javascript/libs/jquery-2.1.1.min.js"></script>
+	<script src="../javascript/libs/bootstrap.min.js"></script>
+	<script src="../javascript/inicio.js"></script>
+	<script src="../javascript/usuarios.js"></script>
+	<script>$(inicio());</script>
+	<script>$(listaUsuarios());</script>
+	
+
+
+</body>
+</html>

@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Sport Zone | Productos</title>
+	<link rel="stylesheet" href="../estilos/bootstrap/bootstrap.min.css">
+	<link rel="stylesheet" href="../estilos/bootstrap/bootstrap-theme.min.css">
+	<link rel="stylesheet" href="../estilos/sportzone_style.css">
+	<link rel="stylesheet" href="../estilos/iconos.css">
+	<link rel="shortcut icon" href="../imagenes/favicon.ico">
+
+
+</head>
+	<nav class="navbar-fixed-top">
+		<ul class="navegacion">
+			<li class="logo logoA"><a href="#"><img src="../imagenes/logo-b.png" alt="logo"></a></li>
+			
+			<li class="nombre nombreA" onClick="javascript: muestraCerrarSesion()"><span>Nombre</span><br><small>correo</small><br /><a href="#" class="icon-arrow-drop-down"></a>
+				<div id="cerrarSesion">
+					<button class="boton verde" onClick="javascript: cerrarSesion()">Cerrar Sesión  <span class="icon-remove-user"></span></button>
+				</div>
+			</li>
+		</ul>
+		<div id="inicioBarraUno" class="inicioBarra" onClick="javascript: muestraBarra()">
+			<span href="#" class="icon-triangle-right"></span>
+		</div>
+		<div id="barraLateral">
+			<ul>
+				<li><a href="menuAdmi.html"><span class="icon-home">_</span>Menú</a></li>
+				<li><a href="productos.html">Productos</a></li>
+				<li><a href="usuarios.html">Usuarios</a></li>
+				<li><a href="marca.html">Marcas</a></li>
+				<li><a href="deportes.html">Deportes</a></li>
+				<li><a href="categorias.html">Categorías</a></li>
+				<li><a href="subcategorias.html">Subcategorías</a></li>
+				
+			</ul>
+			<div id="inicioBarraDos" class="inicioBarra" onClick="javascript: muestraBarra()">
+				<span href="#" class="icon-triangle-left"></span>
+			</div>
+		</div>
+	</nav>
+	<div class="titulo">
+		<h1>Catalogo de Productos</h1>
+	</div>
+	<div id="contenido">
+		<div id="lista">
+			<div id="navTipos">
+				<ul>
+					<li><a id="t1" href="#" class="activo">Ropa</a></li>
+					<li><a id="t2" href="#">Accesorio</a></li>
+					<li><a id="t3" href="#">Calzado</a></li>
+				</ul>
+			</div>
+			<table>
+				<thead>
+					<tr>
+						<th>Id</th>
+						<th>Nombre</th>
+						<th>Genero</th>
+						<th>Categoría</th>
+						<th></th>
+					</tr>
+				</thead>
+				<tbody>
+					
+
+				</tbody>
+			</table>
+			<button class="boton btnGuardar" onClick="javaScript: mostrarFormAgregaProducto();">Agrega <span class="icon-plus2"></span></button>
+		</div>
+		<div id="formulario">
+			<p id="error"></p>
+			<form action="">
+				<div class="grupo-input">
+					<label for="id">ID</label>
+					<input type="text" id="id" disabled>
+				</div>
+				<div class="grupo-input">
+					<label for="nombre">Nombre</label>
+					<input type="text" id="nombre" placeholder="Nombre del producto" maxlength="35">
+				</div>
+				<div class="grupo-input">
+					<label for="tipo">Tipo</label>
+					<select name="tipo" id="tipo">
+						<option value="ropa">Ropa</option>
+						<option value="accesorio">Accesorio</option>
+						<option value="calzado">Calzado</option>
+					</select>
+				</div>
+				<div class="grupo-input">
+					<label for="descripcion">Descripción</label>
+					<textarea name="descripción" id="descripcion" placeholder="Descripción del producto" cols="30" rows="5"></textarea>
+				</div>
+				<div class="grupo-input">
+					<label for="precioC">Compra</label>
+					<input type="number" id="precioC" placeholder="Precio de Compra del Producto" maxlength="7">
+				</div>
+				<div class="grupo-input">
+					<label for="precioV">Venta</label>
+					<input type="number" id="precioV" placeholder="Precio de Venta del Producto" maxlength="7">
+				</div>
+				<div class="grupo-input">
+					<label for="disponibles">Piezas</label>
+					<input type="number" id="disponibles" placeholder="Número de Piezas Disponibles" maxlength="7">
+				</div>
+				<div class="grupo-input">
+					<label for="genero">Genero</label>
+					<select name="genero" id="genero">
+						<option value="hombre">Hombre</option>
+						<option value="mujer">Mujer</option>
+						<option value="niños">Niños</option>
+						<option value="unisex">Unisex</option>
+					</select>
+				</div>
+				
+				<div class="grupo-input">
+					<label for="deporte">Deporte</label>
+					<select name="deporte" id="deporte"></select>
+				</div>
+				<div class="grupo-input">
+					<label for="categoria">Categoría</label>
+					<select name="categoria" id="categoria"></select>
+				</div>
+				<div class="grupo-input">
+					<label for="subcategoria">Subcategoría</label>
+					<select name="subcategoria" id="subcategoria"></select>
+				</div>
+				<div class="grupo-input">
+					<label for="marca">Marca</label>
+					<select name="marca" id="marca"></select>
+				</div>
+				<div class="grupo-input">
+					<label for="talla">Tallas</label>
+					<input type="text" id="talla" placeholder="Tallas disponibles del producto (separalos solo por espacios)">
+				</div>
+
+			</form>
+			<button class="boton btnCancelar" onClick="javascript: mostrarFormAgregaProducto();"><span class="icon-triangle-left"></span>&nbsp;&nbsp;Cancelar</button>
+			&nbsp;&nbsp;
+			<button class="boton btnGuardar" onClick="javaScript: guardaProducto();">Guardar&nbsp;&nbsp;<span class="icon-floppy-disk"></span></button>
+
+		</div>
+	</div>
+	
+		<footer id="pieAdmi">
+			Copyright <strong>SportZone</strong>
+		</footer>
+
+	
+	
+	<div id="modalAvisos" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+             <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+						<h1>SportZone</h1>
+					</div>
+					<div id="aviso" class="modal-body">
+						<p>Mensaje del Aviso...
+							<input type='file' id='inputImagen' name='inputImagen'>
+						</p>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="boton btnEliminar" data-dismiss="modal">Cerrar</button>
+					</div>
+					
+                </div>
+            </div>
+        </div>
+	
+
+	<script src="../javascript/libs/jquery-2.1.1.min.js"></script>
+	<script src="../javascript/libs/bootstrap.min.js"></script>
+	<script src="../javascript/inicio.js"></script>
+	<script src="../javascript/productos.js"></script>
+	<script>$(inicio());</script>
+	<script>$(listarProductos("t1"));</script>
+	
+
+
+</body>
+</html>

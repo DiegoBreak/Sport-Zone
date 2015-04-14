@@ -1,0 +1,161 @@
+@font-face {
+	font-family: 'icomoon';
+	src:url('../estilos/fuentes/icomoon.eot?ix7c2z');
+	src:url('../estilos/fuentes/icomoon.eot?#iefixix7c2z') format('embedded-opentype'),
+		url('../estilos/fuentes/icomoon.woff?ix7c2z') format('woff'),
+		url('../estilos/fuentes/icomoon.ttf?ix7c2z') format('truetype'),
+		url('../estilos/fuentes/icomoon.svg?ix7c2z#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+	font-family: 'icomoon';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.icon-remove-user:before {
+	content: "\e600";
+}
+
+.icon-circle-with-plus:before {
+	content: "\e601";
+}
+
+.icon-plus:before {
+	content: "\e602";
+}
+
+.icon-account-circle:before {
+	content: "\e603";
+}
+
+.icon-attach-money:before {
+	content: "\e604";
+}
+
+.icon-folder-open:before {
+	content: "\e605";
+}
+
+.icon-arrow-drop-down:before {
+	content: "\e606";
+}
+
+.icon-arrow-drop-down-circle:before {
+	content: "\e607";
+}
+
+.icon-check:before {
+	content: "\e608";
+}
+
+.icon-close:before {
+	content: "\e609";
+}
+
+.icon-arrow-left:before {
+	content: "\f040";
+}
+
+.icon-arrow-right:before {
+	content: "\f03e";
+}
+
+.icon-calendar:before {
+	content: "\f068";
+}
+
+.icon-check2:before {
+	content: "\f03a";
+}
+
+.icon-circle-slash:before {
+	content: "\f084";
+}
+
+.icon-comment:before {
+	content: "\f02b";
+}
+
+.icon-home:before {
+	content: "\f08d";
+}
+
+.icon-pencil:before {
+	content: "\f058";
+}
+
+.icon-person:before {
+	content: "\f018";
+}
+
+.icon-playback-fast-forward:before {
+	content: "\f0bd";
+}
+
+.icon-playback-rewind:before {
+	content: "\f0bc";
+}
+
+.icon-plus2:before {
+	content: "\f05d";
+}
+
+.icon-search:before {
+	content: "\f02e";
+}
+
+.icon-sign-in:before {
+	content: "\f036";
+}
+
+.icon-tag:before {
+	content: "\f015";
+}
+
+.icon-three-bars:before {
+	content: "\f05e";
+}
+
+.icon-trashcan:before {
+	content: "\f0d0";
+}
+
+.icon-triangle-down:before {
+	content: "\f05b";
+}
+
+.icon-triangle-left:before {
+	content: "\f044";
+}
+
+.icon-triangle-right:before {
+	content: "\f05a";
+}
+
+.icon-triangle-up:before {
+	content: "\f0aa";
+}
+
+.icon-pencil2:before {
+	content: "\e905";
+}
+
+.icon-floppy-disk:before {
+	content: "\e962";
+}
+
+.icon-user-tie:before {
+	content: "\e976";
+}
+

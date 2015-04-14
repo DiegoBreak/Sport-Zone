@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Sport Zone | Index</title>
+	<link rel="stylesheet" href="../estilos/bootstrap/bootstrap.min.css">
+	<link rel="stylesheet" href="../estilos/bootstrap/bootstrap-theme.min.css">
+	<link rel="stylesheet" href="../estilos/sportzone_style.css">
+	<link rel="stylesheet" href="../estilos/iconos.css">
+	<link rel="shortcut icon" href="../imagenes/favicon.ico">
+
+
+</head>
+	<nav class="navbar-fixed-top">
+		<ul class="navegacion">
+			<li class="logo"><a href="index.html"><img src="../imagenes/logo-b.png" alt="logo"></a></li>
+			<li  class="esconde2"><a id="hombre"  href="#">Hombres</a></li>
+			<li  class="esconde2"><a id="mujer"  href="#">Mujeres</a></li>
+			<li  class="esconde2"><a id="niño"  href="#" class="linea">Niños</a></li>
+			<li  class="esconde"><a  id="marca" href="#">Marcas</a></li>
+			<li  class="esconde"><a  id="deporte" href="#">Deportes</a></li>
+			<li class="buscar"><div><a href="#" class="icon-search"></a><input type="search" placeholder="Buscar"></input></div></li>
+			<li class="cliente"><a href="#" id="formUsuario"class="icon-account-circle"></a></li>
+			<li class="nombre" onClick="javascript: muestraCerrarSesion()"><span>Nombre</span><br><small>correo</small><br /><a href="#" class="icon-arrow-drop-down"></a>
+				<div id="cerrarSesion">
+					<button class="boton verde" onClick="javascript: cerrarSesion()">Cerrar Sesión  <span class="icon-remove-user"></span></button>
+				</div>
+			</li>
+			<li class="menucito" onClick="javascript: muestraMenucito()"><a class="icon-three-bars"></a></li>
+		</ul>
+		<div id="inicio-cliente" class="inicio-cliente">
+			<div class="lineas">
+				<img src="../imagenes/rayas.png" alt="Rayas" class="lineasForm">
+			</div>
+			<h1>Inicia Sesión</h1>
+			<p id="error"></p>
+			<form action="">
+				<input class="inputAccesa" onclick="javascript: revertirError(id)" id="correoU" type="email" placeholder="Email">
+				<input class="inputAccesa" onclick="javascript: revertirError(id)" id="contraseñaU" type="password" placeholder="Contraseña"> 
+				<button type="button" onclick="javascript: validarDatosCliente()" class="btn-info">Entrar</button>
+			</form>
+		</div>
+		<div id="navpeque">
+			<ul>
+				<li><a href="#">Hombre</a></li>
+				<li><a href="#">Mujer</a></li>
+				<li><a href="#">Niños</a></li>
+				<li><a href="#">Marcas</a></li>
+				<li><a href="#">Deportes</a></li>
+			</ul>
+		</div>
+	</nav>		
+		<div id="registroContenedor">
+			<div class="rizquierda">
+
+				<h1>Registrate</h1>
+				<p id="error"></p>
+					<div class="grupo-input">
+						<strong>Nombre</strong>
+						<input type="text" id="nombre" placeholder="Nombre de Usuario" maxlength="15">
+					</div>
+					<div class="grupo-input">
+						<strong>Correo</strong>
+						<input type="email" id="correo" placeholder="Correo Electrónico" maxlength="25">
+					</div>
+					<div class="grupo-input">
+						<strong>Contraseña</strong>
+						<input type="password" id="contraseña1" placeholder="Contraseña de Acceso" maxlength="15">
+					</div>
+					<div class="grupo-input">
+						<strong>Contraseña</strong>
+						<input type="password" id="contraseña2" placeholder="Repite tu Contraseña" maxlength="15">
+					</div>
+					<div class="grupo-input">
+						<button class="boton btnGuardar" onClick="javaScript: registra()">Continuar</button>
+					</div>
+					
+			</div>
+			<div class="rderecha">
+				<img src="../imagenes/logo-n.png" alt="">
+			</div>
+		</div>
+	
+
+	<div id="modalAvisos" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+             <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+						<h4 class="modal-title">Aviso</h4>
+					</div>
+					<div id="aviso" class="modal-body">
+						<p>Mensaje del Aviso...</p>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-warning" data-dismiss="modal">Cerrar</button>
+					</div>
+					
+                </div>
+            </div>
+        </div>
+	
+	<footer class="pieBajo">
+		<div id="inicio-administrador" class="inicio-administrador">
+			<div class="lineas">
+				<img src="../imagenes/rayas2.png" alt="Rayas" class="lineasForm">
+			</div>
+			<h1>Administrador</h1> <br />Inicia Sesión
+			<p id="error"></p>
+			<form action="" id="administrador">
+				<input class="inputAccesa" onclick="javascript: revertirError(id)" id="correoA" type="email" placeholder="Correo Electrónico" require>
+				<input class="inputAccesa" onclick="javascript: revertirError(id)" id="contraseñaA" type="password" placeholder="Contraseña" require> 
+				<button id="entrarA" type="button" class="btn-info" onClick="javascript: validarDatosAdmi();">Entrar</button>
+			</form>
+		</div>
+
+		<div class="pie">
+			<small>Copyright</small> Sport<strong>Zone</strong>
+			<div class="admi">
+				<a href="#inicio-administrador" id="formAdministrador"class="icon-user-tie"></a>
+			</div>
+		</div>
+	</footer>
+
+	<script src="../javascript/libs/jquery-2.1.1.min.js"></script>
+	<script src="../javascript/libs/bootstrap.min.js"></script>
+	<script src="../javascript/inicio.js"></script>
+	<script src="../javascript/registrar.js"></script>
+	<script>$(inicio());</script>
+
+
+</body>
+</html>

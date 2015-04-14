@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Sport Zone | Productos</title>
+	<link rel="stylesheet" href="../estilos/bootstrap/bootstrap.min.css">
+	<link rel="stylesheet" href="../estilos/bootstrap/bootstrap-theme.min.css">
+	<link rel="stylesheet" href="../estilos/sportzone_style.css">
+	<link rel="stylesheet" href="../estilos/iconos.css">
+	<script type="text/javascript" src="https://www.google.com/jsapi"></script>
+	<link rel="shortcut icon" href="../imagenes/favicon.ico">
+
+
+</head>
+	<nav class="navbar-fixed-top">
+		<ul class="navegacion">
+			<li class="logo logoA"><a href="#"><img src="../imagenes/logo-b.png" alt="logo"></a></li>
+			
+			<li class="nombre nombreA" onClick="javascript: muestraCerrarSesion()"><span>Nombre</span><br><small>correo</small><br /><a href="#" class="icon-arrow-drop-down"></a>
+				<div id="cerrarSesion">
+					<button class="boton verde" onClick="javascript: cerrarSesion()">Cerrar Sesión  <span class="icon-remove-user"></span></button>
+				</div>
+			</li>
+		</ul>
+		<div id="inicioBarraUno" class="inicioBarra" onClick="javascript: muestraBarra()">
+			<span href="#" class="icon-triangle-right"></span>
+		</div>
+		<div id="barraLateral">
+			<ul>
+				<li><a href="menuGrafica.html"><span class="icon-home">_</span>Menú</a></li>
+				<li><a href="chartTipo.html">Productos</a></li>
+				<li><a href="chartGeo.html">Mercado</a></li>
+				<li><a href="chartVenta.html">Ventas</a></li>
+				<li><a href="chartGanancia.html">Ganacias</a></li>
+				
+			</ul>
+			<div id="inicioBarraDos" class="inicioBarra" onClick="javascript: muestraBarra()">
+				<span href="#" class="icon-triangle-left"></span>
+			</div>
+		</div>
+	</nav>
+		<div id="contenedor">
+			<img src="../imagenes/titulos/paises.png" alt="Paises">
+			<div id="grafica"></div>
+			
+		</div>
+	
+		<footer id="pieAdmi">
+			Copyright <strong>SportZone</strong>
+		</footer>
+
+	
+	
+	<div id="modalAvisos" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+             <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+						<h1>SportZone</h1>
+					</div>
+					<div id="aviso" class="modal-body">
+						<p>Mensaje del Aviso...
+							<input type='file' id='inputImagen' name='inputImagen'>
+						</p>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="boton btnEliminar" data-dismiss="modal">Cerrar</button>
+					</div>
+					
+                </div>
+            </div>
+        </div>
+	
+
+	<script src="../javascript/libs/jquery-2.1.1.min.js"></script>
+	<script src="../javascript/libs/bootstrap.min.js"></script>
+	<script src="../javascript/inicio.js"></script>
+	<script src="../javascript/chartGeo.js"></script>
+	<script>$(inicio());</script>
+	
+
+
+</body>
+</html>

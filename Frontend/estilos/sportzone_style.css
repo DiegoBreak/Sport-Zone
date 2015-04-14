@@ -1,0 +1,829 @@
+@font-face {
+    font-family: 'lato';
+    src: url('../estilos/fuentes/Lato-Regular-webfont.eot');
+    src: url('../estilos/fuentes/Lato-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../estilos/fuentes/Lato-Regular-webfont.woff2') format('woff2'),
+         url('../estilos/fuentes/Lato-Regular-webfont.woff') format('woff'),
+         url('../estilos/fuentes/Lato-Regular-webfont.ttf') format('truetype'),
+         url('../estilos/fuentes/Lato-Regular-webfont.svg#lato') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'adidas';
+    src: url('../estilos/fuentes/adineue-bold-webfont-webfont.eot');
+    src: url('../estilos/fuentes/adineue-bold-webfont-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../estilos/fuentes/adineue-bold-webfont-webfont.woff2') format('woff2'),
+         url('../estilos/fuentes/adineue-bold-webfont-webfont.woff') format('woff'),
+         url('../estilos/fuentes/adineue-bold-webfont-webfont.ttf') format('truetype'),
+         url('../estilos/fuentes/adineue-bold-webfont-webfont.svg#adidas') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+body
+{
+	font-family: 'lato';
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+footer .pie
+{
+    background: #2d2d2d;
+    color: white;
+    padding: 1em;
+    position: relative;
+    text-align: center;
+}
+footer .pie .admi 
+{
+    position: absolute;
+    right: 15px;
+    top: 15px;
+}
+footer .pie .admi a
+{
+    color: white;
+    font-size: 25px;
+    text-decoration: none;
+}
+footer .inicio-administrador
+{
+    background: #e9e9e9;
+    display: none;
+    padding: 1em 1.5em;
+    position: relative;
+    text-align: left;
+}
+footer .inicio-administrador h1
+{
+    display: inline;
+}
+footer .inicio-administrador .lineasForm
+{
+    display: block;
+    height: 100%;
+    right: 0;
+    position: absolute;
+    top:0;
+}
+h1
+{
+    font-family: 'adidas';
+    font-size: 25px;
+}
+
+nav 
+{
+    background: #2d2d2d;
+    border-bottom: solid  #24D8D0;
+    margin-top: -1.2em;
+    position: relative;
+    overflow: hidden;
+
+}
+nav .inicio-cliente
+{
+    background: #e9e9e9;
+    display: none;
+    padding: 1em 3em;
+    position: relative;
+    text-align: right;
+}
+nav .inicio-cliente h1
+{
+    display: inline;
+}
+nav .inicio-cliente .lineasForm
+{
+    display: block;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top:0;
+}
+nav .navegacion
+{
+    font-size: 18px;
+    padding: 0.2em 3% 0.8em 3%;
+}
+nav .navegacion li
+{
+    display: inline-block;
+    padding: 1em 0.2em 0 0.2em;
+    margin-right: 0.2em;
+}
+nav .navegacion li a
+{
+    background: #2d2d2d;
+    color:white;
+    text-decoration: none; 
+
+}
+nav .navegacion li a:hover
+{
+    text-shadow: 0.2px 0.2px 0.3px #E6E6E6;
+}
+nav .navegacion li .linea
+{
+    border-right: solid 1px #666;
+    padding-right: 8px;
+}
+nav .navegacion .cliente
+{
+    font-size: 35px;
+    position: absolute;
+    top :-3px;
+}
+nav .navegacion .buscar 
+{
+    font-size: 24.5px;
+    margin-left: 30%;
+    margin-right: 1em;
+    padding-right: 3%;
+    position: relative;
+}
+nav  .navegacion .buscar div a
+{
+    background: white;
+    color: #2d2d2d;
+    padding: 0.05em 0.3em 0 0;
+    position: absolute;
+    top: 1.4em;
+    right: 15px;
+}
+nav  .navegacion .buscar div input
+{
+    border-radius: 0.3em;
+    border: #a9a9a9;
+    font-size: 13px;
+    margin: 0 0 0 2.2em;
+    padding: 0.3em; 
+
+}
+nav .navegacion .logo
+{
+    margin: -1em 1% -1em 3%;
+}
+nav .navegacion .logoA
+{
+    margin: 0em 1% -1em 3%;
+}
+nav .navegacion .logo img
+{
+    width: 130px;
+}
+nav .navegacion .menucito
+{
+    color: white;
+    display: none;
+    font-size: 25px;
+    position: absolute;
+    right: 0.3em;
+    top: 0.3em;
+}
+nav .navegacion .nombre
+{
+    color: white;
+    margin: 1em 0.5em -0.8em 0em;
+    padding: 0;
+    position: absolute;
+    text-align: center;
+}
+nav .navegacion .nombre:hover
+{
+   cursor:pointer;
+}
+nav .navegacion .nombre #cerrarSesion
+{
+    background: #b2b2b2;
+    border-radius: 0.3em;
+    display: none;
+    padding: 0.5em;
+    position: fixed; 
+    margin: 0 1em;
+    width: 200px;
+}
+nav .navegacion .nombre #cerrarSesion:before
+{
+    border: 15px solid transparent;
+    border-bottom-color: #b2b2b2;
+    content: ' ';
+    position: absolute;
+    right: 60%;
+    top: -25px;
+    width: 0;
+}
+nav .navegacion .nombreA
+{
+    right: 10%;
+}
+nav #navpeque
+{
+    background: #3e3e3e;
+    display: none;
+    list-style: none;
+    text-align: center;
+}
+nav #navpeque ul li
+{
+    list-style: none;
+    padding-bottom: 0.5em;
+}
+nav #navpeque ul li a
+{
+    color: #ccc;
+    text-decoration: none;
+}
+.boton
+{
+    border: none;
+    color: white;
+    display: inline-block;
+    padding: 5px 15px;
+
+}
+.btnEliminar
+{
+    background: #FD2A35;
+    width: 105px;
+}
+.btnEditar
+{
+    background: #FFB12B;
+    width: 105px;
+}
+.btnCancelar
+{
+    background: #FD2A35;
+    width: 180px;
+}
+.btnGuardar
+{
+    background: #4ECBE8;
+    width: 180px;
+}
+.btnGuardar
+{
+    background: #4ECBE8;
+    width: 180px;
+}
+.btnVer
+{
+    background: #3481DD;
+    width: 105px;
+}
+.grupo-input 
+{
+    margin-bottom:2em;
+    padding: 0;
+}
+.grupo-input label
+{
+    background: #2d2d2d;
+    border-right: solid 3px #24D8D0;
+    border-bottom-left-radius: 8px;
+    border-top-left-radius: 8px;
+    color:white;
+    display: inline-block;
+    padding: 0.52em;
+    width: 7em;
+}
+.grupo-input input, .grupo-input select, .grupo-input textarea, .checkbox
+{
+    border: solid 1px #ccc;
+    display: inline-block;
+    height: 100%;
+    padding: 0.4em;
+    width: calc(98% - 7em);
+}
+
+.icono
+{
+    font-size: 20px;
+}
+.imgProducto
+{
+    margin: 0 0 0 140px;
+    width: 230px;
+    height: 230px;
+}
+.inicioBarra
+{
+    background: #2d2d2d;
+    cursor: pointer;
+    height: 100%;
+    padding-top: 1em;
+    position: absolute;
+    text-align: center;
+    top:0;
+    width: 35px;
+}
+.inicioBarra span
+{
+    color: white;
+    font-size: 30px;
+}
+.inputError
+{
+    background: #ffd7d7;
+}
+.inputAccesa
+{
+    border:solid 1px #ccc;
+    border-radius: 3px;
+    margin: 0.3em 0.5em;
+    padding: 0.2em;
+}
+.linea
+{
+    width: 30%;
+}
+.navbar-fixed-top{
+    border-bottom-width: 2px;
+}
+.titulo
+{
+    background: #E6E6E6;
+    color: #4e4f4f;
+    left: 0;
+    padding: 0.5em 3em;
+    position: fixed;
+    right: 0;
+    top:63px;
+}
+.verde
+{
+    background: #73EA3C;
+}
+#barraLateral
+{
+    background: #2d2d2d;
+    border: 0;
+    bottom: 0;
+    color: #ccc;
+    display: none;
+    padding: 2em 0;
+    position: fixed;
+    top: 61px;
+    width: 250px;
+}
+#barraLateral ul 
+{
+    padding-left: 0;
+}
+#barraLateral ul li
+{
+    list-style: none;
+    
+}
+#barraLateral ul li:hover
+{
+    background: #24D8D0;
+    color: #2d2d2d;
+
+}
+#barraLateral ul li a
+{
+    color: white;
+    display: block;
+    padding-bottom: 1em;
+    padding-left: 1.5em;
+    text-decoration: none;
+}
+#contenido
+{
+   margin: 150px 12% 20px 12%;
+}
+#contenido table
+{
+   width: 100%;
+}
+#error
+{
+    background: #ffffce;
+}
+#formulario
+{
+    display: none;
+    width: 100%;
+}
+#inicioBarraUno
+{
+    left: 0;
+    top: 61px;
+    position: fixed;
+}
+#inicioBarraDos
+{
+    right: 0;
+}
+#lista table
+{
+    margin-bottom: 1em;
+}
+#lista table tbody tr td
+{
+    cursor: default;
+    padding: 0.5em 4em 0.5em 1em;
+}
+#lista table tbody tr td:last-child
+{
+    padding: 0.5em 0em 0.5em 0em;
+}
+#lista table tbody tr
+{
+    border-bottom: solid 2px white;
+}
+
+#lista table tbody tr:hover, #lista table tbody tr:nth-child(2n+1):hover
+{
+    background: #ccc;
+    border-bottom: solid 2px #24D8D0;
+}
+#lista table tbody tr:nth-child(2n+1)
+{
+    background: #E6E6E6;
+}
+#navTipos ul li
+{
+    display: inline-block;
+    list-style: none;
+    margin: 0 2% 2em 2%;
+    width: 25%;
+}
+#navTipos ul li a
+{
+    border-bottom: solid 2px white;
+    color: #24D8D0;
+    display: block;
+    padding: 0.7em;
+    text-align: center;
+    text-decoration: none;
+    width: 100%;
+}
+#navTipos ul li .activo
+{
+    background: #24D8D0;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    color: white;
+}
+#navTipos ul li a:hover
+{
+    border-color: #24D8D0;
+}
+#pieAdmi
+{
+    border-top: solid 2px #ccc;
+    margin: 2em 8% 0 8%;
+    padding:1em;
+    text-align: center;
+}
+
+#slider
+{
+    margin-top: 63px;
+}
+@media screen and (max-width:1035px ){
+    nav .navegacion .cliente
+    {
+        position: absolute;
+        right: 1em;
+        top: -0.3em;
+    }
+    nav .navegacion .esconde
+    {
+        display: none;
+    }
+    nav .navegacion .buscar 
+    {
+        margin-left: -1em;
+    }
+    nav .navegacion .logo img
+    {
+        width: 100px;
+    }
+     nav .navegacion .nombre
+    {
+        position: absolute;
+        right: 0.2em;
+        top: 0em;
+    }
+}
+@media screen and (max-width:750px ){
+    nav .navegacion
+    {
+        padding-bottom: 17px;  
+        padding-top: 20px;      
+    }
+    nav .navegacion .buscar
+    {
+        display: none;
+    }
+    
+    nav .navegacion .nombre
+    {
+        top: 0px;
+        
+    }
+    nav .inicio-cliente
+    {
+        text-align: center;
+    }
+    nav .inicio-administrador
+    {
+        text-align: center;
+    }
+    .lineas
+    {
+        display: none;
+    }
+    .rderecha
+    {
+        display: none;
+    }
+    .rizquierda
+    {
+        width: 100%;
+    }
+}
+@media screen and (max-width:560px ){
+    nav .navegacion .esconde2
+    {
+        display: none;
+    }
+    nav .navegacion .menucito
+    {
+        display: block;
+    }
+    nav .navegacion .nombre
+    {
+        right: 2em;
+    }
+
+}
+
+.modal-header
+{
+    background: #2d2d2d;
+    color: white;
+}
+
+.modal-footer
+{
+    background: #24D8D0;
+}
+/*consulta cliente*/
+
+#productos
+{
+    margin: 90px 10% 0px 280px;
+    padding: 0;
+    width: calc(90% - 250px);
+
+}
+.resultado
+{
+    display: table;
+    margin-bottom: 25px; 
+    margin-right: 20px;
+    padding: 1.3em;
+    position:relative; 
+    overflow: hidden;
+    width: 95%;
+}
+.resultado .prueba
+{
+    border-bottom: solid 1px #E6E6E6; 
+    display: table-cell;
+    margin: 10px;
+    padding: 15px;
+    overflow: hidden;
+
+}
+.resultado .prueba:first-child
+{
+    border-right: solid 1px #E6E6E6; 
+}
+.resultado .prueba:last-child
+{
+    border-left: solid 1px #E6E6E6; 
+}
+.resultado .prueba:hover
+{
+    -webkit-box-shadow: 0px 0px 33px -3px rgba(0,0,0,0.71);
+    -moz-box-shadow: 0px 0px 33px -3px rgba(0,0,0,0.71);
+    box-shadow: 0px 0px 33px -3px rgba(0,0,0,0.71);
+}
+.resultado .prueba p
+{
+    color: #515151;
+}
+.imgRes
+{
+    border-bottom: solid 1px #bdbdbd;
+    cursor: pointer;
+    display: block;
+    margin:0 auto 4em auto;
+    width: 180px;
+    height: 180px;
+}
+.icon-attach-money
+{
+    font-size: 20px;
+}
+/*
+    filtro
+*/
+#filtro
+{
+    background: #bdbdbd;
+    padding-top: 100px;
+    position: fixed;
+    top: 0px;
+    bottom: 0px;
+    width: 240px;
+}
+
+#filtro li
+{
+    list-style: none;
+    cursor: pointer;
+}
+#filtro>ul>li>div>ul
+{
+    display: none;
+}
+#filtro strong
+{
+    font-family: 'adidas';
+    font-size: 20px;
+}
+ #navegando
+ {
+    color: black;
+    font-family: "adidas";
+    font-size: 20px;
+    margin-bottom: 3em;
+
+ }
+ .sc{
+    display: none;
+ }
+ .logito
+ {
+    position: absolute;
+    top: -50%;
+    width: 85px;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+
+ }
+ .prueba:hover>.logito
+ {
+    top: 5%;
+ }
+
+#divModal p
+{
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+
+.rderecha
+{
+    position: absolute;
+    right: 0;
+    top: 100px;
+    width: 50%;
+}
+.rderecha img
+{
+    margin: 0 auto;
+    width: 100%;
+}
+.rizquierda
+{
+    
+    left: 0;
+    top: 0;
+    width: 50%;
+
+}
+.rizquierda input
+{
+    width: 100%;
+
+}
+#registroContenedor
+{
+    position: relative;
+    width: 90%;
+    margin: 100px 5% 0 5%;
+}
+.pieBajo
+{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+#menu
+{
+    margin: 100px 5% 0 5%;
+    width: 90%;
+}
+.imglogo
+{
+    margin: 0 10%;
+    width: 70%;
+}
+.imgMenu
+{
+    margin: 4%;
+    width: 86%;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+}
+.imgMenu:hover
+{
+    width: 100%;
+    margin: -4%;
+}
+#cero
+{
+    background: #ccc;
+    width: 90%;
+    height: 350px;
+    margin-bottom: 3em;
+}
+#cero p
+{
+    text-align: center;
+}
+.tablaVer
+{
+    margin: 0 auto;
+}
+.tablaVer tr td
+{
+    padding-left: 1em;
+    padding-right: 1em;
+}
+#descripcion
+{
+    text-align: center;
+}
+#grafica
+{
+    width: 70%;
+    height: 700px;
+    margin: 0 auto;
+    position: absolute;
+    left: 50px;
+    padding: 0;
+}
+#contenedor
+{
+    margin: 0 5% 0 10%;
+}
+#contenedor h1
+{
+    display: block;
+    position: absolute;
+    left: 50px;
+    top: 75px;
+}
+#contenedor img
+{
+    position: fixed;
+    right: 3em;
+    top:75px;
+    width: 200px;
+}
+
+#tablaGraficas
+{
+    right: 0;
+    top:60px;
+    position: absolute;
+}
+.agotado
+{
+    border-left: solid 9px #FD2A35;
+}
+.cagotado
+{
+    border-left: solid 9px #FFB12B;
+}
